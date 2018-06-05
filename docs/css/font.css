@@ -1,0 +1,9 @@
+@font-face {
+    font-family: font;
+    src: url(../font/demo_font.ttf);
+}
+
+@font-face {
+    font-family: silkscreen;
+    src: url(../font/silkscreen.ttf);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <title>BBQ Escape: The best way to waste your time! | Demo</title>
+    <meta name="author" content="Enhanced Assemblies">
+    <meta name="description" content="BBQ Escape, the best way to waste your time! This site offers an online demo, so you won't even have to install the app to try it out!">
+    <meta name="keywords" content="BBQ,Escape,Enhanced,Assemblies">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/images.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+
+    <link rel="stylesheet" href="css/demo_master.css" media="screen" title="master">
+    
+    <link rel="stylesheet" type="text/css" href="css/mobileStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/phabletStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/tabletStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/desktopStyle.css">
+
+    <script type="text/javascript" src="js/demo/core.js"></script>
+    <script src="js/demo/player.js" charset="utf-8"></script>
+    <script src="js/demo/bullet.js" charset="utf-8"></script>
+    <script src="js/demo/exp.js" charset="utf-8"></script>
+    <script src="js/demo/enemy.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/demo/game.js"></script>
+
+    <script type="text/javascript" src="js/home.js"></script>
+  </head>
+  <body onload="startGame('canvas')">
+    <header>
+      <div class="herocontainer">
+        <img id="headertitle" src="img/bbqescapeherotext.png" alt="BBQ Escape logo" />
+        <script type="text/javascript">randomQuote();</script>
+      </div>
+    </header>
+    <div class="navcontrol" onclick="showNavItems()">
+      <img id="navctrlbutton" src="img/neonarrowdown.png" alt="Navigation toggle">
+    </div>
+    <nav>
+      <ul id="nav-list">
+        <!-- Stupid HTML & CSS alert: If the line breaks are not commented out, inline-block elements won't fit next to each other. -->
+        <li><a href="index.html" class="navigationItem"><span>Home</span></a></li><!--
+        --><li><a href="about.html" class="navigationItem"><span>About</span></a></li><!--
+        --><li><a href="demo.html" class="navigationItem" id="active"><span>Demo</span></a></li><!--
+        --><li><a href="contact.html" class="navigationItem"><span>Contact</span></a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <main class="game">
+        <div>
+          <canvas id="canvas" width="960" height="540" class="game pixelScaling"></canvas>
+        </div>
+
+        <div class="gameContent">
+          Hi :D
+          <img id="img_player" class="pixelScaling" width="16" height="16" src="img/demo/HamChar.png" alt="player" />
+          <img id="img_overlay" class="pixelScaling" width="640" height="480" src="img/demo/overlay.png" alt="overlay" />
+          <img id="img_vintage" class="pixelScaling" width="640" height="480" src="img/demo/vintage.png" alt="overlay" />
+          <img id="img_tomato" class="pixelScaling" width="8" height="8" src="img/demo/tomato.png" alt="overlay" />
+          <img id="img_bullet" class="pixelScaling" width="4" height="4" src="img/demo/bullet.png" alt="overlay" />
+          <img id="img_auber" class="pixelScaling" width="16" height="16" src="img/demo/auber.png" alt="overlay" />
+
+          <audio id="aud_background" src="aud/background.mp3" preload="auto"></audio>
+          <audio id="aud_expl" src="aud/shot.wav" preload="auto"></audio>
+          <audio id="aud_jump" src="aud/jump.wav" preload="auto"></audio>
+          <audio id="aud_jump_double" src="aud/jump_double.wav" preload="auto"></audio>
+          <audio id="aud_shoot" src="aud/shoot.wav" preload="auto"></audio>
+        </div>
+        <div class="unsupportedDevice" id="promotional_message">
+          <img class="appicon" src="img/bbqescapehero.png" alt="">
+          <div class="playstorelink">
+            <a href="https://play.google.com/store/apps/details?id=nl.ea.bbq.android">
+              <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="clearHelper"></div>
+    <footer>
+      <div class="footerText">© 2015 Enhanced Assemblies</div>
+    </footer>
+  </body>
+</html>

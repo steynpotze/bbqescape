@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title>BBQ Escape: The best way to waste your time! | Home</title>
+		<meta name="author" content="Enhanced Assemblies">
+		<meta name="description" content="BBQ Escape, the best way to waste your time! This site offers an online demo, so you won't even have to install the app to try it out!">
+		<meta name="keywords" content="BBQ,Escape,Enhanced,Assemblies">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="icon" type="image/png" href="img/favicon.png">
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/images.css">
+		<link rel="stylesheet" type="text/css" href="css/font.css">
+		<link rel="stylesheet" type="text/css" href="css/animation.css">
+		
+		<link rel="stylesheet" type="text/css" href="css/mobileStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/phabletStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/tabletStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/desktopStyle.css">
+
+		<script type="text/javascript" src="js/home.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="herocontainer">
+				<img id="headertitle" src="img/bbqescapeherotext.png" alt="BBQ Escape logo" />
+				<script type="text/javascript">randomQuote();</script>
+			</div>
+		</header>
+		<div class="navcontrol" onclick="showNavItems()">
+			<img id="navctrlbutton" src="img/neonarrowdown.png" alt="Navigation toggle">
+		</div>
+		<nav>
+			<ul id="nav-list">
+				<!-- Stupid HTML & CSS alert: If the line breaks are not commented out, inline-block elements won't fit next to each other. -->
+				<li><a href="index.html" class="navigationItem" id="active"><span>Home</span></a></li><!--
+				--><li><a href="about.html" class="navigationItem"><span>About</span></a></li><!--
+				--><li><a href="demo.html" class="navigationItem"><span>Demo</span></a></li><!--
+				--><li><a href="contact.html" class="navigationItem"><span>Contact</span></a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<aside>
+				<div class="sideblock" id="promotional_message">
+					<img class="appicon" src="img/bbqescapehero.png" alt="">
+					<div class="playstorelink">
+						<a href="https://play.google.com/store/apps/details?id=nl.ea.bbq.android">
+						  <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+						</a>
+					</div>
+				</div>
+			</aside>
+			<main>
+				<article id="appintro">
+					<div class="biginfo">
+						<div class="phonescreenrecording">
+							<video autoplay loop>
+								<source src="vid/bbqescape.mp4" type="video/mp4">
+								You are using an outdated web browser :(
+							</video>
+						</div>
+						<div class="slogan">
+							<h3>The last thing you will ever see!</h3>
+						</div>
+					</div>
+					<hr>
+					<div class="textinfo">
+						<p>
+							BBQ Escape is an award winning game that is designed to make you angry. The moment you install it on your phone, it will instantly take over your life. You will play it every minute of your day. You will forget your primitive needs. Your social life wil disappear. You will get into a state of depression because you are unable to beat your high score, let alone the world high score.
+						</p>
+						<p>
+							Everyone needs something like BBQ Escape in their life. And because BBQ Escape is free, why would you choose something else?
+						</p>
+					</div>
+					<div class="award_container">
+						<div class="single_award">
+							<div>
+								<img src="img/awardleafleft.png" alt="award leaf" class="awardleafleft">
+							</div>
+							<div class="awardtextcontainer">
+								<span class="awardtextbig">SAXION</span>
+								<br>
+								<span class="awardtextsmall">APP SHOW<br>WINNER 2015</span>
+							</div>
+							<div>
+								<img src="img/awardleafright.png" alt="award leaf" class="awardleafright">
+							</div>
+						</div>
+					</div>
+				</article>
+			</main>
+			<aside>
+				<div class="sideblock">
+					<img id="nesfamilyimg" src="img/nesfamily.jpg" alt="Family playing BBQ Escape NES">
+					Fun for the entire family!
+				</div>
+			</aside>
+			<div class="clearHelper"></div>
+			<footer>
+				<div class="footerText">© 2015 Enhanced Assemblies</div>
+			</footer>
+		</div>
+	</body>
+</html>

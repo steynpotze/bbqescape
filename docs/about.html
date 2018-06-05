@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title>BBQ Escape: The best way to waste your time! | About</title>
+		<meta name="author" content="Enhanced Assemblies">
+		<meta name="description" content="BBQ Escape, the best way to waste your time! This site offers an online demo, so you won't even have to install the app to try it out!">
+		<meta name="keywords" content="BBQ,Escape,Enhanced,Assemblies">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="icon" type="image/png" href="img/favicon.png">
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/images.css">
+		<link rel="stylesheet" type="text/css" href="css/font.css">
+		<link rel="stylesheet" type="text/css" href="css/animation.css">
+		
+		<link rel="stylesheet" type="text/css" href="css/mobileStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/phabletStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/tabletStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/desktopStyle.css">
+
+		<script type="text/javascript" src="js/home.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="herocontainer">
+				<img id="headertitle" src="img/bbqescapeherotext.png" alt="BBQ Escape logo" />
+				<script type="text/javascript">randomQuote();</script>
+			</div>
+		</header>
+		<div class="navcontrol" onclick="showNavItems()">
+			<img id="navctrlbutton" src="img/neonarrowdown.png" alt="Navigation toggle">
+		</div>
+		<nav>
+			<ul id="nav-list">
+				<!-- Stupid HTML & CSS alert: If the line breaks are not commented out, inline-block elements won't fit next to each other. -->
+				<li><a href="index.html" class="navigationItem"><span>Home</span></a></li><!--
+				--><li><a href="about.html" class="navigationItem" id="active"><span>About</span></a></li><!--
+				--><li><a href="demo.html" class="navigationItem"><span>Demo</span></a></li><!--
+				--><li><a href="contact.html" class="navigationItem"><span>Contact</span></a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<aside>
+				<div class="sideblock" id="promotional_message">
+					<img class="appicon" src="img/bbqescapehero.png" alt="">
+					<div class="playstorelink">
+						<a href="https://play.google.com/store/apps/details?id=nl.ea.bbq.android">
+						  <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+						</a>
+					</div>
+				</div>
+			</aside>
+			<main>
+				<article>
+					<h2>What is BBQ Escape?</h2>
+					<p>
+						What do you do when you discover you are about to get grilled on a random family BBQ party? Try to escape of course!
+					</p>
+					<p>
+						You are playing a heavily armed ham who jumps from platform to platform, avoiding and shooting enemies.
+						These enemies are evil vegetables who are angry about the fact that more and more people are choosing to eat them instead of meat. They will do everything in their power to stop you from escaping, and will make sure you are the one who is eaten first.
+					</p>
+					<p>
+						Even though you always end up on the barbecue, there still is a difference between losing and losing. There is a worldwide high score which every player is trying to beat. Of course, for the less skilled players, you can always just try to beat your own high score.
+					</p>
+					<p>
+						BBQ Escape was developed in 8 weeks time by a team of four first year software engineering students at Saxion University. The game was developed as a project assigned to us by school. The original assignment was to make a 2D single player game using the framework provided by school. However, we thought we could do better by developing our own game engine using OpenGL ES.
+						<br>We think we succeeded.
+					</p>
+				</article>
+			</main>
+			<aside>
+				<div class="sideblock">
+					<img id="nesfamilyimg" src="img/nesfamily.jpg" alt="Family playing BBQ Escape NES">
+					Fun for the entire family!
+				</div>
+			</aside>
+			<div class="clearHelper"></div>
+			<footer>
+				<div class="footerText">© 2015 Enhanced Assemblies</div>
+			</footer>
+		</div>
+	</body>
+</html>

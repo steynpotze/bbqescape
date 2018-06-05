@@ -1,0 +1,335 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+@media only screen  and (min-width : 1224px) {
+	body {
+		margin: 0;
+		font-family: 'Exo 2', sans-serif;
+		font-size: 16px;
+		background-color: #212121;
+	}
+
+	header {
+		height: 8.25em;
+		background-image: url("../img/grid.png"), url("../img/noisyblack.jpg");
+		background-size: auto 100%, auto 100%;
+		background-position: center top;
+		background-repeat: no-repeat, repeat-x;
+		
+	}
+
+	.herocontainer {
+		position: relative;
+		height: 8.25em;
+	}
+
+	#titlequotecontainer {
+		position: relative;
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	#headertitle {
+		position: absolute;
+		max-height: 60%;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+	}
+	#headerquote {
+		position: absolute;
+		max-height: 40%;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+	}
+
+	.unsupportedDevice {
+		display: none;
+	}
+
+	/* Navigation */
+
+	nav {
+	}
+
+	.navcontrol {
+		display: none;
+	}
+
+	nav ul {
+		display: block;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		border-top: solid 0.1em #BBB;
+		border-bottom: solid 0.1em #BBB;
+	}
+
+	nav ul li {
+		display: inline-block;
+		width: 10em;
+	}
+
+	.navigationItem {
+		display: block;
+		color: #FFF;
+		width: 100%;
+		height: 2em;
+
+		background: -webkit-linear-gradient(rgba(255,0,0,0), rgba(255,0,0,0) 50%, white 50%, white);
+		background: -o-linear-gradient(rgba(255,0,0,0), rgba(255,0,0,0) 50%, white 50%, white);
+		background: linear-gradient(rgba(255,0,0,0), rgba(255,0,0,0) 50%, white 50%, white);
+		background-size: 100% 200%;
+	  	transition: all 0.2s ease;
+
+		text-decoration: none;
+	}
+
+	.navigationItem:hover {
+		background-position: 100% 100%;
+		color: #575757;
+	}
+
+	.navigationItem span {
+		display: block;
+		width: 100%;
+		text-align: center;
+		line-height: 2em;
+	}
+
+	#active {
+		color: #a07ac8;
+	}
+
+	/* Content */
+
+	.container {
+		width: 1024px;
+		margin: 0 auto;
+		margin-top: 0.5em;
+		overflow: auto;
+	}
+
+	main {
+		-webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    padding: 0.5em;
+		width: -moz-calc(70% - 0.25em);
+		width: -webkit-calc(70% - 0.25em);
+		width: -o-calc(70% - 0.25em);
+		width: calc(70% - 0.25em);
+		color: #FFF;
+		float: left;
+		background-color: #393939;
+		border-radius: 0.5em;
+	}
+
+	main.game {
+		-webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    padding: 0.5em;
+		width: 100%;
+		color: #FFF;
+		float: none;
+		background-color: #000;
+		border-radius: 0.5em;
+	}
+
+	/* About the app */
+
+	hr {
+		margin: 2em 0;
+	}
+
+	.biginfo {
+
+	}
+
+	.textinfo {
+		text-align: center;
+		width: 100%;
+	}
+
+	.phonescreenrecording {
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+
+	.phonescreenrecording:after {
+		content: '';
+	    display: block;
+	    background: url('../img/screenshot.png') no-repeat top left transparent;
+	    background-size: 100% auto;
+	    width: 100%;
+	    height: 100%;
+	    left: 0px;
+	    top: 0px;
+	    position: absolute;
+	    z-index: 10;
+	}
+
+	.phonescreenrecording video {
+		position: absolute;
+		left: 10.68154643%;
+		top: 5.335489086%;
+		width: 76.524511758%;
+		z-index: 5;
+	}
+
+	.slogan {
+		position: relative;
+		width: 100%;
+		height: 5em;
+		background-image: url("../img/infoback.png");
+		background-size: auto 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.slogan h3 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		width: 100%;
+
+		font-size: 3em;
+		font-family: silkscreen, sans-serif;
+		color: rgba(255,255,255,1);
+		text-shadow: 0.09em 0.09em rgba(150,150,150,0.7);
+		text-align: center;
+		margin: 0;
+	}
+
+	.award_container {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-flow: row;
+
+		justify-content: center;
+	}
+
+	.single_award {
+		justify-content: center;
+		display: -webkit-box;
+		display:  -moz-box;
+		display:  -ms flexbox;
+		display: flex;
+		flex-flow: row;
+
+		-webkit-box-align: center;
+		-moz-box-align: center;
+		-o-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+
+		width: 15em;
+
+		margin: 10px;
+	}
+
+	.awardleafleft {
+		float: left;
+		height: 100%;
+	}
+
+	.awardleafright {
+		float: right;
+		height: 100%;
+	}
+
+	.awardtextcontainer {
+		flex: 1;
+		text-align: center;
+	}
+
+	.awardtextbig {
+		font-size: 2em;
+	}
+
+	.awardtextsmall {
+
+	}
+
+	/* Promo */
+
+	#promotional_message {
+	}
+
+	#promotional_message .appicon {
+		width: 50%;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 1em;
+	}
+	
+	#promotional_message .playstorelink {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	#promotional_message .playstorelink img {
+		width: 100%;
+	}
+
+	.sideblock {
+		-webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    padding: 0.5em;
+		width: 100%;
+		color: #FFF;
+		background-color: #393939;
+		border-radius: 0.5em;
+	}
+
+	.sideblock~.sideblock {
+		margin-top: 0.5em;
+	}
+
+	aside~aside {
+		margin-top: 0.5em;
+	}
+
+	aside {
+		width: -moz-calc(30% - 0.25em);
+		width: -webkit-calc(30% - 0.25em);
+		width: -o-calc(30% - 0.25em);
+		width: calc(30% - 0.25em);
+		float: right;
+	}
+
+	/* Footer */
+
+	.clearHelper {
+		clear: both;
+	}
+
+	.footerText {
+		height: 5em;
+		text-align: center;
+		margin-top: 5em;
+		color: #FFF;
+	}
+}
